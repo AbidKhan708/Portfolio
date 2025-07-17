@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { ChevronDown, Github, Linkedin, Mail } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import CVDownload from "@/components/cv-download"
+import { motion } from "framer-motion";
+import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import CVDownload from "@/components/cv-download";
 
 export default function Hero() {
   const containerVariants = {
@@ -15,7 +15,7 @@ export default function Hero() {
         staggerChildren: 0.2,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
@@ -23,10 +23,13 @@ export default function Hero() {
       y: 0,
       opacity: 1,
     },
-  }
+  };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+    >
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -63,15 +66,16 @@ export default function Hero() {
       >
         <motion.div variants={itemVariants} className="mb-6">
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-cyan-400/20 to-purple-400/20 backdrop-blur-sm rounded-full text-cyan-300 text-sm font-medium border border-cyan-400/30">
-            Full Stack Developer & AI Integration Expert
+            Muhammad Abid Ali Khan
           </span>
         </motion.div>
 
         <motion.h1
           variants={itemVariants}
-          className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-cyan-200 to-purple-200 bg-clip-text text-transparent"
+          className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-cyan-200 to-purple-200 bg-clip-text text-transparent"
         >
-          Muhammad Abid Ali Khan
+          {/* Muhammad Abid Ali Khan  */}
+          Full Stack Developer & AI Integration Expert
         </motion.h1>
 
         <motion.p
@@ -80,7 +84,9 @@ export default function Hero() {
         >
           3+ Years Experience | React.js Specialist | Team Leadership
           <br />
-          <span className="text-cyan-400">From intern to leading development teams</span>
+          <span className="text-cyan-400">
+            From intern to leading development teams
+          </span>
         </motion.p>
 
         <motion.div
@@ -96,7 +102,10 @@ export default function Hero() {
           <CVDownload />
         </motion.div>
 
-        <motion.div variants={itemVariants} className="flex justify-center space-x-6">
+        <motion.div
+          variants={itemVariants}
+          className="flex justify-center space-x-6"
+        >
           {[
             { icon: Github, href: "#", label: "GitHub" },
             { icon: Linkedin, href: "#", label: "LinkedIn" },
@@ -132,5 +141,5 @@ export default function Hero() {
         </motion.div>
       </motion.div>
     </section>
-  )
+  );
 }

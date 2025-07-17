@@ -118,8 +118,8 @@ const otherProjects = [
     tech: ["React.js", "Performance Metrics", "Dashboard"],
   },
   {
-    title: "Contestance",
-    description: "Contest Management System",
+    title: "Contestant Center",
+    description: "Contestant Center Management System",
     url: "https://dev.contestantcenter.com/",
     tech: ["Contest Logic", "User Management", "Real-time Updates"],
   },

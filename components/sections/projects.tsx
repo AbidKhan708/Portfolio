@@ -129,8 +129,8 @@ const projects = [
     ],
   },
   {
-    title: "Contestance",
-    subtitle: "Contest Management System",
+    title: "Contestant Center",
+    subtitle: "Contestant Center Management System",
     description:
       "Advanced contest management platform with real-time updates, user management, and comprehensive contest logic for various competition types.",
     url: "https://dev.contestantcenter.com/",
